@@ -11,7 +11,7 @@
 @import "blocks/review";
 @import "blocks/newsletter";
 @import "blocks/footer";
-@import '../../../node_modules/aos/dist/aos';
+@import "../../../node_modules/aos/dist/aos";
 
 :root {
   --menu-breakpoint: 991.98px;
@@ -50,7 +50,7 @@
   --background-color3: #333;
   --box-shadow1: 0px 0px 10px rgba(0, 0, 0, 0.2);
   --box-shadow2: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  --box-shadow3: 3px 3px 6px  rgba(0, 0, 0, 0.2);
+  --box-shadow3: 3px 3px 6px rgba(0, 0, 0, 0.2);
   /*z-index*/
   --z-overlay: 10;
   --z-fixed: 100;
@@ -125,7 +125,6 @@ img {
   &.double {
     @media screen and (min-width: $bp600) {
       grid-template-columns: repeat(2, 1fr);
-     
     }
     column-gap: 7rem;
     row-gap: 3.5rem;
@@ -180,7 +179,8 @@ img {
   color: var(--primary-color-hover);
   justify-content: center;
   cursor: pointer;
-  position: fixed;z-index: var(--z-fixed);
+  position: fixed;
+  z-index: var(--z-fixed);
   bottom: 3rem;
   right: 3rem;
   border-radius: 4px;
@@ -188,20 +188,20 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: var(--trans-0-3);
-  
-  &.scrollUp--active{
+
+  &.scrollUp--active {
     opacity: 1;
     visibility: visible;
-    &:hover{
-      .scrollUp__icon{
+    &:hover {
+      .scrollUp__icon {
         transform: translateY(-2px);
       }
     }
   }
-  &__icon{
+  &__icon {
     opacity: 0.7;
     transition: var(--trans-0-3);
-    &:hover{
+    &:hover {
       opacity: 1;
     }
   }
