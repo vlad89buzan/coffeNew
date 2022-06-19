@@ -122,14 +122,14 @@ const swiper = new Swiper('.home__swiper', {
 
 	// Автопрокрутка
 	
-	// autoplay: {
-	// 	// Пауза между прокруткой
-	// 	delay: 2000,
-	// 	// Закончить на последнем слайде
-	// 	//stopOnLastSlide: true,
-	// 	// Отключить после ручного переключения
-	// 	//disableOnInteraction: false
-	// },
+	autoplay: {
+		// Пауза между прокруткой
+		delay: 2000,
+		// Закончить на последнем слайде
+		//stopOnLastSlide: true,
+		// Отключить после ручного переключения
+		//disableOnInteraction: false
+	},
 	
 
 	// Скорость
