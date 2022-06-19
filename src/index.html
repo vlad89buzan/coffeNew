@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main>
+			<!-- home -->
+			<section class="home" id="home">
+
+				<!-- Slider main container -->
+				<div class="swiper home__swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide ">
+							<img class="home__img" src="@img/homeImg1.jpg" alt="coffee">
+							<div class="container">
+								<div class="home__content content">
+									<div class="home__text content__text">
+										<h4 class="home__subtitle content__subtitle">We really like what we do.</h4>
+										<h2 class="home__title content__title">Coffee Beans with a <br> Perfect Aroma
+										</h2>
+										<button class="button">Explore</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide ">
+							<img class="home__img" src="@img/homeImg2.jpg" alt="coffee">
+							<div class="container">
+								<div class="home__content content">
+									<div class="home__text content__text">
+										<h4 class="home__subtitle content__subtitle">Enjoy the finest coffee drinks.
+										</h4>
+										<h2 class="home__title content__title">Enjoy Our Exclusive <br> Coffee and
+											Cocktails</h2>
+										<button class="button">Explore</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide ">
+							<img class="home__img" src="@img/homeImg3.jpg" alt="coffee">
+							<div class="container">
+								<div class="home__content content">
+									<div class="home__text content__text">
+										<h4 class="home__subtitle content__subtitle">Making Our coffee with lover.</h4>
+										<h2 class="home__title content__title">Alluring and Fragrant <br> Coffee Aroma
+										</h2>
+										<button class="button">Explore</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination home__swiperPagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev home__swiperButton"></div>
+					<div class="swiper-button-next home__swiperButton"></div>
+
+
+
+				</div>
+
+			</section>
+			<!-- about -->
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about__content content double">
+						<div class="content__img" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+							<img src="@img/aboutImg.jpg" alt="img">
+							<div class="about__imgDescription">
+								<i class="bx bx-heart about__icon flex"></i>
+								<p class="content__description">I really love the Cappucino. The coffee war very smooth.
+								</p>
+							</div>
+						</div>
+						<div class="content__text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+							<h4 class="content__subtitle about__subtitle">Our coffee Shop</h4>
+							<h2 class="content__title about__title">We Combine Classics <br> and Modernity</h2>
+							<p class="content__description about__description">We appreciate your trust greatly.
+								Our clients choose us and our products because theyknow we are the best.</p>
+							<ul class="content__list flex">
+								<li class="content__listItem">Cappucino</li>
+								<li class="content__listItem dot">.</li>
+								<li class="content__listItem">Late</li>
+								<li class="content__listItem dot">.</li>
+								<li class="content__listItem">Arabica</li>
+
+							</ul>
+							<div class="about__buttons">
+								<div class="button">About Us</div>
+								<a href="#" class="about__link link flex">
+									<span class="link__text">See More</span>
+									<i class="bx bx-right-arrow-alt link__icon"></i>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- menu -->
+			<section class="menu" id="menu">
+				<div class="container">
+					<div class="content">
+						<div class="content__text">
+							<h2 class="content__subtitle">Our Menu</h2>
+							<h4 class="content__title">Our Popular Menu</h4>
+							<div class="content__description">Our place designed by pro architecture with psychologist
+								to build best place suit you. </div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="content__items menu__items">
+							<div class="menu__item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+								<div class="menu__itemImage">
+									<img src="@img/menuImg1.png" alt="img">
+								</div>
+								<div class="content__text menu__text">
+									<h3 class="menu__itemTitle">Americano Roasted Coffee</h3>
+									<p class="menu__itemDescription">It is a long established fact that a reader will be
+										distracted by the readable.</p>
+								</div>
+								<div class="menu__itemPrice">
+									<span class="menu__priceDiscount">$18.99</span>
+									<span class="menu__priceReal">$20.66</span>
+								</div>
+							</div>
+							<div class="menu__item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+								<div class="menu__itemImage">
+									<img src="@img/menuImg2.png" alt="img">
+								</div>
+								<div class="content__text menu__text">
+									<h3 class="menu__itemTitle">Brazilan Rosted Coffee</h3>
+									<p class="menu__itemDescription">It is a long established fact that a reader will be
+										distracted by the readable.</p>
+								</div>
+								<div class="menu__itemPrice">
+									<span class="menu__priceDiscount">$18.99</span>
+									<span class="menu__priceReal">$20.66</span>
+								</div>
+							</div>
+							<div class="menu__item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+								<div class="menu__itemImage">
+									<img src="@img/menuImg3.png" alt="img">
+								</div>
+								<div class="content__text menu__text">
+									<h3 class="menu__itemTitle">Mericano Cold Coffee</h3>
+									<p class="menu__itemDescription">It is a long established fact that a reader will be
+										distracted by the readable.</p>
+								</div>
+								<div class="menu__itemPrice">
+									<span class="menu__priceDiscount">$18.99</span>
+									<span class="menu__priceReal">$20.66</span>
+								</div>
+							</div>
+							<div class="menu__item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+								<div class="menu__itemImage">
+									<img src="@img/menuImg4.png" alt="img">
+								</div>
+								<div class="content__text menu__text">
+									<h3 class="menu__itemTitle">Mericano Cold Coffee</h3>
+									<p class="menu__itemDescription">It is a long established fact that a reader will be
+										distracted by the readable.</p>
+								</div>
+								<div class="menu__itemPrice">
+									<span class="menu__priceDiscount">$18.99</span>
+									<span class="menu__priceReal">$20.66</span>
+								</div>
+							</div>
+						</div>
+						<div class="content__timetable timetable" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
+							<h3 class="timetable__title">TimeTable</h3>
+							<ul class="timetable__list">
+								<li class="timetable__item">
+									<div class="timetable__day">Sunday</div>
+									<div class="timetable__time">Closed</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Monday</div>
+									<div class="timetable__time">7.00am - 3.00pm</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Tuesday</div>
+									<div class="timetable__time">7.00am - 3.00pm</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Wednesday</div>
+									<div class="timetable__time">7.00am - 3.00pm</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Thursday</div>
+									<div class="timetable__time">7.00am - 3.00pm</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Friday</div>
+									<div class="timetable__time">7.00am - 3.00pm</div>
+								</li>
+								<li class="timetable__item">
+									<div class="timetable__day">Saturday</div>
+									<div class="timetable__time">9.00am - 2.00pm</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- brand -->
+			<section class="brand">
+				<div class="container">
+					<div class="content">
+						<h2 class="content__title">Our Trusted Brands</h2>
+					</div>
+					<div class="brand__images">
+						<div class="brand__image" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+							<img src="@img/brandImg1.png" alt="img">
+						</div>
+						<div class="brand__image" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+							<img src="@img/brandImg2.png" alt="img">
+						</div>
+						<div class="brand__image" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+							<img src="@img/brandImg3.png" alt="img">
+						</div>
+						<div class="brand__image" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+							<img src="@img/brandImg4.png" alt="img">
+						</div>
+						<div class="brand__image" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+							<img src="@img/brandImg5.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- review -->
+			<section class="review" id="review">
+				<div class="container">
+					<div class="content">
+						<div class="content__text">
+							<h4 class="content__subtitle">Reviews</h4>
+							<h2 class="content__title">What Client Says</h2>
+							<p class="content__description">
+								Some reviews that customer said about coffee services and business Lorem ipsum dolor sit
+								amet consectetur adipisicing elit. Sunt magnam totam repellat, labore commodi
+								exercitationem!
+							</p>
+						</div>
+
+					</div>
+					<!-- Slider main container -->
+					<div class="swiper review__swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide ">
+								<div class="review__item">
+									<img src="@img/profileImg1.jpg" alt="img">
+									<p class="review__quote quote">
+
+										Your coffee hits the spot every time. Thank you for the experience of pure,
+										delicious coffee masterfully roasted! I will never purchase any other and I will
+										spread the word!
+
+									</p>
+									<i class="bx bxs-quote-alt-left quote__icon"></i>
+									<div class="review__person">
+										<span class="review__name">Marnie Rotter</span>
+										<span class="review__job">App Developer</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-slide ">
+								<div class="review__item">
+									<img src="@img/profileImg2.jpg" alt="img">
+									<p class="review__quote quote">
+
+										My favorite espresso. Anyone who enjoys a good espresso should definitely order
+										their espresso!! And its clean, like all their coffee; no added poisons. Can't
+										beat that. Enjoy!
+									</p>
+									<i class="bx bxs-quote-alt-left quote__icon"></i>
+									<div class="review__person">
+										<span class="review__name">Marnie Rotter</span>
+										<span class="review__job">App Developer</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-slide ">
+								<div class="review__item">
+									<img src="@img/profileImg3.jpg" alt="img">
+									<p class="review__quote quote">
+										I buy my Komodo Decaf at Frey's and I love it so much, it was on my Christmas
+										list and now in my cup. It is the best organic Swiss water process (only kind I
+										drink) coffee I have ever had! Dark, rich, smooth and delicious. Worth every
+										penny. Thank you!
+									</p>
+									<i class="bx bxs-quote-alt-left quote__icon"></i>
+									<div class="review__person">
+										<span class="review__name">Marnie Rotter</span>
+										<span class="review__job">App Developer</span>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+						<div class="swiper-pagination review__swiperPagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev review__swiperButton review__swiperButtonPrev"></div>
+						<div class="swiper-button-next review__swiperButton review__swiperButtonNext"></div>
+
+
+					</div>
+				</div>
+			</section>
+			<!--newsletter-->
+			<section class="newsletter">
+				<div class="container" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+					<a href="#" class="header__logo logo flex">
+						<i class="logo__icon bx bx-coffee"></i>
+						<span class="logo__text">Coffee</span>
+					</a>
+					<div class="content">
+						<div class="content__text">
+							<p class="content__description">
+								This is the perfect place to find a nice and cozy spot to sip some. You'll find the Java
+								Jungle, Coffee Bean and more shops right in this website.
+							</p>
+						</div>
+					</div>
+					<form action="#" class="newsletter__form">
+						<input type="email" class="newsletter__input" placeholder="email@example.com">
+						<button type="submit" class="newsletter__button button">Subscribe</button>
+					</form>
+					<div class="menu__icons flex">
+						<a href="#" class="menu__icon bx bxl-facebook"></a>
+						<a href="#" class="menu__icon bx bxl-twitter"></a>
+						<a href="#" class="menu__icon bx bxl-instagram-alt"></a>
+						<a href="#" class="menu__icon bx bxl-github"></a>
+						<a href="#" class="menu__icon bx bxl-youtube"></a>
+					</div>
+				</div>
+			</section>
+			<!-- scroll-up -->
+			<a href="#home" class="scrollUp flex">
+				<i class="bx bx-up-arrow-alt scrollUp__icon"></i>
+			</a>
+
+
+		</main>
+		@@include('html/footer.html',{})
+	</div>
+		<script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+@import "normalize";
+@import "var";
+// @import "fonts";
+//@import "mixins";
+@import "blocks/header";
+@import "blocks/swiper-bundle";
+@import "blocks/home";
+@import "blocks/about";
+@import "blocks/menu";
+@import "blocks/brand";
+@import "blocks/review";
+@import "blocks/newsletter";
+@import "blocks/footer";
+@import '../../../node_modules/aos/dist/aos';
+
+:root {
+  --menu-breakpoint: 991.98px;
+  /*Font Sizes & Family*/
+  --body-font: "Poppins", sans-serif;
+  --big-font: 3.5rem;
+  --h1-font: 2.4rem;
+  --h2-font: 2rem;
+  --h3-font: 1.8rem;
+  --h4--font: 1.6rem;
+  --normal-font: 1.5rem;
+  --small-font: 1.3rem;
+  --smaller-font: 1.2rem;
+
+  /*Font Weight*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 600;
+
+  /*Color Variables*/
+  --primary-color: #c87e4f;
+  --primary-color-hover: #c2703d;
+  --font-color1: #333;
+  --font-color2: #888682;
+  --font-color3: #;
+  --font-color4: #;
+  --font-color5: #;
+
+  --bg-color1: #2c3034;
+  --bg-color2: #;
+  --bg-color3: #;
+  --white-color: #fff;
+  --border-color: #484848;
+  --background-color1: rgba(0, 0, 0, 0.4);
+  --background-color2: rgba(255, 255, 255, 0.2);
+  --background-color3: #333;
+  --box-shadow1: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow2: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  --box-shadow3: 3px 3px 6px  rgba(0, 0, 0, 0.2);
+  /*z-index*/
+  --z-overlay: 10;
+  --z-fixed: 100;
+  /*Transition*/
+  --trans-0-2: 0.2s;
+  --trans-0-3: 0.3s;
+  --trans-0-5: 0.5s;
+}
+
+@media (min-width: $bp992) {
+  :root {
+    --big-font: 4rem;
+    --h1-font: 3.6rem;
+    --h2-font: 2.4rem;
+    --h3-font: 2rem;
+    --h4--font: 1.8rem;
+    --normal-font: 1.6rem;
+    --small-font: 1.4rem;
+    --smaller-font: 1.3rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  &.body--lock {
+    overflow: hidden;
+  }
+}
+body,
+button,
+input {
+  font-family: var(--body-font);
+  font-size: var(--normal-font);
+  font-weight: var(--font-regular);
+  color: var(--font-color1);
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--whitecolor);
+}
+
+main {
+  flex: 1 1 100%;
+  position: relative;
+}
+a {
+  color: inherit;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container {
+  max-width: $bp1024;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+.content {
+  display: grid;
+  &.double {
+    @media screen and (min-width: $bp600) {
+      grid-template-columns: repeat(2, 1fr);
+     
+    }
+    column-gap: 7rem;
+    row-gap: 3.5rem;
+    align-items: center;
+  }
+  grid-template-columns: repeat(1, 1fr);
+
+  &__text {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+  }
+  &__title {
+    text-align: center;
+    font-size: var(--h2-font);
+    font-weight: var(--font-bold);
+    line-height: 150%;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+  }
+  &__description {
+    text-align: center;
+    line-height: 150%;
+    font-size: var(--normal-font);
+  }
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.button {
+  text-align: center;
+  padding: 1.4rem 4rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  color: white;
+  transition: var(--trans-0-3);
+  cursor: pointer;
+  &:hover {
+    background-color: var(--primary-color-hover);
+  }
+}
+.scrollUp {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-color);
+  color: var(--primary-color-hover);
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;z-index: var(--z-fixed);
+  bottom: 3rem;
+  right: 3rem;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow3);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--trans-0-3);
+  
+  &.scrollUp--active{
+    opacity: 1;
+    visibility: visible;
+    &:hover{
+      .scrollUp__icon{
+        transform: translateY(-2px);
+      }
+    }
+  }
+  &__icon{
+    opacity: 0.7;
+    transition: var(--trans-0-3);
+    &:hover{
+      opacity: 1;
+    }
+  }
+}

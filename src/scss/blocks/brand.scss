@@ -1,0 +1,44 @@
+.brand {
+  .container {
+   padding-top: 50px;
+   padding-bottom: 50px;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+  }
+
+  &__image {
+    max-width: 150px;
+    opacity: 0.3;
+    transition: var(--trans-0-5);
+    &:hover{
+        opacity: 1;
+    }
+    img{
+        
+        object-fit: contain;
+       
+       
+    }
+  }
+  .content {
+    @media screen and (min-width: 599.98px) {
+      grid-template-columns: 1fr;
+    }
+    margin-bottom: 2rem;
+  
+    &__title {
+        color: var(--primary-color);
+        font-style: italic;
+    }
+  }
+ 
+}
+
+
